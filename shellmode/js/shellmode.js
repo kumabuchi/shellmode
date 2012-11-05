@@ -214,7 +214,7 @@ less: function (){
 	      commands.cat();
       },
 exit: function (){
-	      window.location.href = "../";
+	      window.location.href = exitUrl;
       },
 quit: function (){
 	      commands.exit();
