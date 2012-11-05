@@ -237,7 +237,7 @@ help: function (){
       }
 }
 var current = dirs;
-var currdir = "~";
+var currdir = dirs["."];
 var param = "";
 var history = new Array();
 var histnum = 0;
