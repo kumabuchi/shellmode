@@ -2,7 +2,7 @@
  * Write directories structure here.
  * How to :
  * 1. declare the directory : dirs["dirname"] = { ".":"dirname" }; 
- *        and if not rootdir, dirs["dirname"] = { "..": parentdir }; 
+ *        and if not rootdir, dirs["dirname"][".."] = parentdir; 
  * 2. declere the file      : dirs["dirname"]...["filename"] = "file context";
  */
 
@@ -14,7 +14,7 @@ dirs["contents"]={ ".":"contents" };
 dirs["contents"][".."] = dirs;
 dirs["contents"]["sample.txt"] = "This is a sample text file.";
 dirs["contents"]["dir"] = {".":"dir"};
-dirs["contents"]["dir"] = {"..":dirs["contents"]};
+dirs["contents"]["dir"][".."] = dirs["contents"];
 dirs["contents"]["dir"]["sample2.txt"] = "This is a sample test file 2";
 
 
