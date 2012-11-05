@@ -1,0 +1,107 @@
+.cssConsole {
+position:relative;
+font-family: courier;
+background: #ffffff;
+color: #000000;
+padding-right: 5px;
+overflow: hidden;
+height: 17px;
+cursor:text;
+}
+
+.cssConsoleDisplay {
+float: left; 
+padding-left: 5px;
+white-space: pre;
+}
+
+.cssConsoleInput {
+position:absolute;
+left:0px;
+top:-30px;
+opacity: 0; 
+filter:alpha(opacity=0);
+} 
+
+.cssConsoleCursor {
+float: left;
+background: #000000;
+width:8px;
+height:17px;
+margin:0;
+padding:0;
+padding-right:1px;
+padding-left:1px;
+visibility: hidden;
+}
+
+.cssConsoleDisplay span.selected {
+background: #ffffff;
+color: #370f29;	
+}
+
+.cssConsoleDisplay span {
+background: #ffffff;
+color: #000000;	
+margin:0;
+padding:0;
+padding-right:0px;
+padding-left:0px;
+}
+
+body{
+background: #ffffff;
+            font-family: courier;
+}
+
+#input {
+display:inline-block;
+position:relative;
+
+}
+
+.bottom {
+width: 90%;
+}
+
+.label {
+position: relative;
+left: 15px;
+color: #00000;
+float:left;
+}
+
+.console {
+overflow:hidden;
+}
+
+.white{
+color: #fefefe;
+}
+
+.black{
+color: #000000;
+}
+
+.blue{
+color: #00008B;
+}
+
+.green{
+color: #2E8B57;
+}
+
+.choco{
+color: #D2691E;
+}
+
+.line {
+        margin-left: 15px;
+        margin-bottom:2px;
+}
+
+.margin {
+        margin-left: 40px;
+        margin-bottom:2px;
+}
+

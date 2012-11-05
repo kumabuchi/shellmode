@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Kenji KUMABUCHI --shellmode--</title>
+<link href="css/cssConsole.console.css" type="text/css" rel="stylesheet">
+</head>
+<body onload="$('.cssConsoleInput').focus();" >
+<div class="container">
+<div class="console">
+<div class="line black">
+--shellmode-- <br/>
+shell viewer 0.5.0 (ver.alpha)<br/>
+written by Kenji KUMABUCHI.(MIT License)<br/>
+Welcome to SHELL MODE!! Type '<span style="color:blue;">help</span>' for command list.
+</div>
+</div>
+<div class="bottom">
+<div class="label">[guest@shellmode ~]&#36;&#160;&#160;</div>
+<div id="input"></div>
+</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/directories.js"></script>
+<script>
+if(jQuery.browser.msie && parseInt(jQuery.browser.version) == 9){
+$(".label").append("Sorry... This application is not compatible with IE9.");
+}else{
+$("body").append("<script src=\"js/shellmode.js\"></s"+"cript>");
+}
+</script>
+</body>
+</html>
