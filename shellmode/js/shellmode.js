@@ -292,7 +292,9 @@ $("#input").keydown( function( e ) {
 				var supdeq = sup.dequeue();
 				if( tmpdir[supdeq] instanceof Object ){
 					supdeq += "/";
-				}
+				}else{
+                    supdeq += " ";
+                }   
 				for( var s = 0; s < supdeq.length; s++){
 					$(".cssConsoleDisplay").append("<span>" + supdeq.charAt(s) + "</span>");}
 				$(".cssConsoleInput").val(origin+supdeq);
